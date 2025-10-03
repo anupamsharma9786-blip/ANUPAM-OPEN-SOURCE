@@ -1,0 +1,59 @@
+@font-face {
+    font-family: bat;
+    src: url(./GothamKnightsMidCondense-2OMGv.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/2179.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    padding: 250px 10px 0px 10px;
+    font-family: bat;
+    font-size: 300px;
+    font-weight: 400;
+    color: #880007;
+    text-transform: capitalize;
+}
+
+h2{
+    padding: 80px 100px;
+    font-family: bat;
+    font-size: 100px;
+    font-weight: 400;
+    color: #C4C9CD;
+    text-transform: capitalize;
+}
+
+video{
+    margin-left: 30px;
+    margin-top: 150px;
+    border-radius: 25px;
+}
+
+button{
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: rgb(205, 205, 205);
+    background-color: #880007;
+    border-radius: 25px;
+    border: none;
+}
