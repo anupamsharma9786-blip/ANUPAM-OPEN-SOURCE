@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Nothing1;
+  src: url(Ndot-55.otf);
+}
+@font-face {
+  font-family: Nothing2;
+  src: url(NType82-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nothing1;
+  font-weight: 200;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  background-image: url(/4ef2af4fc4259cb398efe107002fca5355159f73-4096x2305.avif);
+  background-size: cover;
+}
+main section nav {
+  color: #303030;
+  height: 3rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  opacity: 50%;
+  border-radius: 15px;
+  margin-top: 1rem;
+  padding: 0.2rem 1rem;
+}
+main section nav .nav-mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50rem;
+}
+main section nav .nav-mid h1, main section nav .nav-mid h2 {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main section nav i {
+  font-size: 2rem;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

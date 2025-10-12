@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Nothing1;
+    src: url(Ndot-55.otf);
+}
+
+@font-face {
+    font-family: Nothing2;
+    src: url(NType82-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nothing1;
+    font-weight: 200;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@mixin flex1(){
+            display: flex;
+            align-items: center;   
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+
+    section{
+        @include flex1();
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        background-image: url(/4ef2af4fc4259cb398efe107002fca5355159f73-4096x2305.avif);
+        background-size: cover;
+
+        nav{
+            color: #303030;
+            height: 3rem;
+            width: 90%;
+            @include flex1();
+            justify-content: space-between;
+            background-color: white;
+            opacity: 50%;
+            border-radius: 15px;
+            margin-top: 1rem;
+            padding: 0.2rem 1rem;
+
+            .nav-mid{
+                @include flex1();
+                justify-content: space-between;
+                width: 50rem;
+
+                h1,h2{
+                text-transform: uppercase;
+                cursor: pointer;
+                }
+            }
+
+            i{  
+                font-size: 2rem;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
