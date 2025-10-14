@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "topleft topright topright"
+                         "topleft btm1 btm2";
+
+    gap: 5px;
+
+}
+
+.top-left{
+    grid-area: topleft;
+    background-image: url(https://th.bing.com/th/id/OIP.4CQWOkcDo5m_AUIyw_ZrCAHaLH?w=203&h=304&c=7&r=0&o=7&cb=12&pid=1.7&rm=3);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.top-right{
+    grid-area: topright;
+    background-image: url(https://tse3.mm.bing.net/th/id/OIP.sVbEf_S8eaMgR6iCpm_QJwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 15px;
+
+}
+
+.btm-1{
+    grid-area: btm1;
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.xpMnnaiWllRCuDFQBKcmPAAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.btm-2{
+    grid-area: btm2;
+    background-image: url(https://img.freepik.com/premium-photo/model-walking-down-runway-fashion-show-runway-model-walking-down-runway_950002-188598.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}

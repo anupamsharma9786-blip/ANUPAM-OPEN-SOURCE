@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "top-left top-right top-right
+                          top-left btm-1 btm-2";
+
+    
+
+}
+
+.top-left{
+    grid-area: top-left;
+    background-color: red;
+}
+
+.top-right{
+    grid-area: top-right;
+    background-color: crimson;
+
+}
+
+.btm-1{
+    grid-area: btm-1;
+    background-color: blue;
+}
+
+.btm-2{
+    grid-area: btm-2;
+    background-color: green
+}
