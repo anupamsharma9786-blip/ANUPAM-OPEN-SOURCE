@@ -20,11 +20,15 @@ html{
 }
 
 main{
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
+    align-items: center;
     background-color: #121212;
     padding: 1rem;
     width: 100%;
+
+    section{
+        margin-top: 1rem;
+    }
 
     .nav{
         margin-bottom: 1rem;
@@ -48,6 +52,10 @@ main{
             background-color: rgb(34, 34, 34);
         }
     }
+
+    .nav{
+        max-width: 1600px;
+    }
     
 
 
@@ -56,6 +64,7 @@ main{
         width: 100%;
 
         .top{
+            width: 100%;
             img{
                 width: 100%;
                 border-radius: 10px;
@@ -70,6 +79,7 @@ main{
             justify-content: center;
 
             p{
+                font-size: 0.8rem;
                 color: rgb(238, 238, 238);
             }
 
@@ -85,7 +95,7 @@ main{
                 }
 
                 p{
-                    font-size: 1.2rem;
+                    font-size: 0.9rem;
                     font-weight: 400;
                     opacity: 0.6;
                     line-height: 1.5;
@@ -113,6 +123,184 @@ main{
         max-width: 1600px;
     }
 
+    .view2{
+        @include flex-column(1rem);
+        margin: 2rem;
+        width: 100%;
+        .top,.bottom{
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            small{
+                color: white;
+                opacity: 0.6;
+            }
+            h1{
+                font-size: 2.5rem;
+                font-weight: 400;
+                color: white;
+            }
+        }       
+    }
+
+    .view3{
+        @include flex-column(1rem);
+        width: 100%;
+
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+
+        }
+
+        .bottom{
+            @include flex-column(4rem);
+            background-color: rgb(34, 34, 34);
+            padding: 2rem;
+            border-radius: 10px;
+            justify-content: center;
+
+            p{
+                font-size: 0.8rem;
+                color: rgb(238, 238, 238);
+            }
+
+            .text{
+                @include flex-column(1rem);
+                
+
+                h1{
+                    font-size: 2rem;
+                    color: rgb(238, 238, 238);
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+                .paragraphs{
+                    width: 100%;
+                    gap: 1rem;
+                    p{  
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                        opacity: 0.6;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+
+    .view4{
+        @include flex-column(1rem);
+        width: 100%;
+
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+
+        }
+
+        .bottom{
+            @include flex-column(4rem);
+            background-color: rgb(34, 34, 34);
+            padding: 2rem;
+            border-radius: 10px;
+            justify-content: center;
+
+            p{
+                font-size: 0.8rem;
+                color: rgb(238, 238, 238);
+            }
+
+            .text{
+                @include flex-column(1rem);
+                
+
+                h1{
+                    font-size: 2rem;
+                    color: rgb(238, 238, 238);
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+                .paragraphs{
+                    width: 100%;
+                    gap: 1rem;
+                    p{  
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                        opacity: 0.6;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+    
+    .intro{
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+            h1{
+                color: white;
+                font-weight: 400;
+            }
+        }
+    .view5{
+        @include flex-column(1rem);
+        width: 100%;
+
+        .card{
+            width: 100%;
+            background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-1080.webp);
+            aspect-ratio: 1/1;
+            background-size: cover;
+            border-radius: 0.4rem;
+            padding: 1.5rem 1rem;
+            @include flex-column(2rem);
+            justify-content: space-between;
+
+            .top{
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.5rem;
+            }
+
+            i{
+                padding: 0.5rem;
+                width: fit-content;
+                border-radius: 50%;
+
+            }
+
+            i,.bottom{
+                background-color: rgba(85, 85, 85, 0.562);
+                backdrop-filter: blur(5px);
+                border: 2px solid rgba(121, 121, 121, 0.733);
+                color: white;
+
+                h1{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+                
+            }
+
+            .bottom{
+                border-radius: 0.5rem;
+                padding: 0.7rem 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    
     @media (min-width:900px) {
         .view1{
             flex-direction: row;
@@ -126,7 +314,51 @@ main{
                 width: 50%;
             }
         }
-    }
 
+        .view2{
+            flex-direction: row;
+        }
+
+        .view3{
+            flex-direction: row-reverse;
+
+            .top{
+                width: 50%;
+            }
+
+            .bottom{
+                justify-content: space-between;
+                width: 50%;
+
+                .paragraphs{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .view4{
+            flex-direction: row;
+
+            .top{
+                width: 50%;
+            }
+
+            .bottom{
+                justify-content: space-between;
+                width: 50%;
+
+                .paragraphs{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .view5{
+            flex-direction: row;
+        }
+
+    }
 
 }
