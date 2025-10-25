@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Russ;
+  src: url(/RussoOne-Regular.ttf);
+}
+@font-face {
+  font-family: Oswald;
+  src: url(/Oswald-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  font-family: Oswald;
+  font-weight: 300;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+main nav {
+  height: 4rem;
+  width: 100%;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to top, black, #121212, #121212);
+}
+main nav .name {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main nav .name h1 {
+  font-family: Russ;
+  font-size: 1rem;
+  color: #00FF95;
+  font-weight: 100;
+}
+main nav .nav-links {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 2rem;
+}
+main nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+main nav .nav-links a:hover {
+  color: rgb(0, 255, 149);
+  font-size: 1rem;
+}
+main nav .contact {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+main nav .contact button {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: rgb(0, 255, 149);
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main nav .contact button:hover {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -3px -3px 4px rgba(255, 255, 255, 0.5);
+  background-color: #00cc99;
+  color: white;
+}
+main section {
+  width: 100%;
+  background-image: url(/Copilot_20251025_133247.png);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 2rem;
+}
+main section .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main section .intro .text {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.26);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.5);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main section .intro .text h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+main section .intro .text h1 {
+  color: #00FF95;
+  font-family: Russ;
+  font-size: 5rem;
+  font-weight: 200;
+}
+main section .intro .profile {
+  width: fit-content;
+  width: -moz-fit-content;
+}
+main section .intro .profile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  main nav .nav-links {
+    display: none;
+  }
+  main section .intro {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
