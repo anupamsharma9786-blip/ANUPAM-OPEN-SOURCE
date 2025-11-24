@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #111;
+    padding: 2rem 4rem;
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    
+}
+
+.card img{
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.card h1{
+    font-size: 2rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    white-space: nowrap;
+    
+}
+.card h2{
+    font-size: 1.5rem;
+    font-family: monospace;
+    white-space: nowrap;
+    color: crimson;
+    
+
+    
+    
+}
+.card p{
+    font-family: monospace;
+    text-align: center;
+    
+    
+}
