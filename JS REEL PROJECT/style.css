@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,black,grey,black);
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    
+}
+
+section .allreels{
+    margin: auto;
+    height: 100%;
+    width: 600px;
+    padding: 20px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+}
+
+.allreels::-webkit-scrollbar{
+    display: none;
+}
+section .allreels .reel{
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
+
+}
+section .allreels .reel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+section .allreels .reel .bottom{
+    transform: translateY(-100%);
+    padding: 10px;
+    width: 100%;
+    object-fit: cover;
+    background: linear-gradient(to bottom, transparent,rgb(0, 0, 0));
+
+}
+
+
+section .allreels .reel .bottom .user{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+    gap: 15px;
+
+}
+
+section .allreels .reel .bottom .user img{
+    background-color: white;
+    padding: 2px;
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+section .allreels .reel .bottom .user h3{
+    font-size: 1.5rem;
+    
+}
+
+section .allreels .reel .bottom .user button{
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+
+section .allreels .reel .bottom h2{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section .allreels .reel .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 18px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+
+}
+
+section .allreels .reel .right>div{
+    cursor: pointer;
+
+
+}
+
+section .allreels .reel .right h2{
+    font-size: 2.5rem;
+    pointer-events: none; 
+    
+    
+
+    &:active{
+        scale: 0.9;
+    }
+
+}
+
+section .allreels .reel .right h4{
+    text-align: center;
+    pointer-events: none;   
+
+}
+
+section .allreels .reel .right h2 i{
+    
+    font-weight: 500;
+    text-align: center;
+
+}
+
+section .allreels .reel .mute{
+
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: rgb(80, 80, 80);
+    position: absolute;
+    margin: 5px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+section .allreels .reel .mute i{
+    font-size: 2rem;
+    pointer-events: none;
+}
+
+
